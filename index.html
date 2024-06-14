@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patryk Niziołek - Personal Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -61,27 +63,16 @@
       color: white;
       position: relative;
     }
-    .animate {
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
   </style>
 </head>
 <body>
-<header class="animate">
+<header data-aos="fade-down">
   <img src="icon.jpg" alt="Patryk Niziołek">
   <h1>Patryk Niziołek</h1>
   <p>Java/JavaScript Developer</p>
 </header>
 <div class="container">
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
       I am a Java/JavaScript Developer at Transition Technology PSC, specializing in IoT and PLM departments.
@@ -90,7 +81,7 @@
       and database design and programming.
     </p>
   </div>
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>Employment History</h2>
     <p><strong>07.2021 - Present:</strong> Transition Technology PSC - Java/JS Developer</p>
     <p>
@@ -99,7 +90,7 @@
       and refining the existing codebase to enhance performance.
     </p>
   </div>
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>Education & Certificates</h2>
     <ul>
       <li>Bachelor of Computer Science, Kielce University of Technology (2018-2022)</li>
@@ -112,7 +103,7 @@
       <li>AWS Partner Accreditations (2023)</li>
     </ul>
   </div>
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>Skills</h2>
     <div class="skills">
       <div>
@@ -133,7 +124,7 @@
       </div>
     </div>
   </div>
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>Interests</h2>
     <ul>
       <li>Scuba Diving: Exploring the underwater world and learning valuable life lessons like patience and teamwork.</li>
@@ -142,7 +133,7 @@
       <li>Motorization: Enjoying fast driving and precision in vehicle mechanics and tuning.</li>
     </ul>
   </div>
-  <div class="section animate">
+  <div class="section" data-aos="fade-up">
     <h2>Contact Information</h2>
     <div class="contact-info">
       <div>
@@ -163,6 +154,15 @@
 <footer>
   <p>&copy; 2024 Patryk Niziołek. All rights reserved.</p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
 </html>
 
