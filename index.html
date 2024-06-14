@@ -6,6 +6,7 @@
   <title>Patryk Niziołek - Personal Webpage</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -15,6 +16,7 @@
       color: #333;
       background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
+
     header {
       background-color: #333;
       color: white;
@@ -22,6 +24,7 @@
       text-align: center;
       position: relative;
     }
+
     header img {
       border-radius: 50%;
       width: 150px;
@@ -30,11 +33,13 @@
       margin-top: 20px;
       border: 5px solid white;
     }
+
     .container {
       width: 90%;
       margin: 0 auto;
       padding: 20px;
     }
+
     .section {
       background: white;
       margin: 20px 0;
@@ -42,20 +47,35 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
     .section h2 {
       margin-top: 0;
       border-bottom: 2px solid #4CAF50;
       padding-bottom: 10px;
     }
+
     .skills, .contact-info {
       display: flex;
       flex-wrap: wrap;
     }
+
     .skills div, .contact-info div {
       flex: 1;
       min-width: 200px;
       margin: 10px;
     }
+
+    .hobby {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .hobby i {
+      font-size: 50px;
+      margin-right: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 20px 0;
@@ -75,7 +95,7 @@
   <div class="section" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I am a Java/JavaScript Developer at Transition Technology PSC, specializing in IoT and PLM departments.
+      I am a Java Developer at Transition Technology PSC, specializing in IoT and PLM departments.
       I have a strong understanding of REST API and test coverage, and I actively engage in Scrum projects.
       I am proficient in object-oriented programming, JEE open-source frameworks, RESTful system design architecture,
       and database design and programming.
@@ -126,12 +146,22 @@
   </div>
   <div class="section" data-aos="fade-up">
     <h2>Interests</h2>
-    <ul>
-      <li>Scuba Diving: Exploring the underwater world and learning valuable life lessons like patience and teamwork.</li>
-      <li>Microprocessors: Creating projects with Arduino and ESP32, experimenting with electronics.</li>
-      <li>Boxing: Developing self-discipline, mental endurance, and perseverance.</li>
-      <li>Motorization: Enjoying fast driving and precision in vehicle mechanics and tuning.</li>
-    </ul>
+    <div class="hobby">
+      <i class="fas fa-fist-raised"></i>
+      <p>Boxing: Developing self-discipline, mental endurance, and perseverance.</p>
+    </div>
+    <div class="hobby">
+      <i class="fas fa-swimmer"></i>
+      <p>Scuba Diving: Exploring the underwater world and learning valuable life lessons like patience and teamwork.</p>
+    </div>
+    <div class="hobby">
+      <i class="fas fa-microchip"></i>
+      <p>Microprocessors: Creating projects with Arduino and ESP32, experimenting with electronics.</p>
+    </div>
+    <div class="hobby">
+      <i class="fas fa-car"></i>
+      <p>Motorization: Enjoying fast driving and precision in vehicle mechanics and tuning.</p>
+    </div>
   </div>
   <div class="section" data-aos="fade-up">
     <h2>Contact Information</h2>
@@ -165,4 +195,3 @@
 </script>
 </body>
 </html>
-
