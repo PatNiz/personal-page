@@ -67,6 +67,15 @@ header .contact-info-header a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+    header img {
+        width: 120px; /* Adjust image size */
+    }
+    .skills-container, .contact-info {
+        flex-direction: column;
+    }
+}
+
 header img {
     border: 5px solid white;
     position: relative;
