@@ -104,14 +104,47 @@ header p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    flex-wrap: wrap;
 
+}
+.about-me-container {
+    display: flex;
+    justify-content: space-between; /* Wyrównanie elementów */
+    align-items: center; /* Wyrównanie w pionie */
+    width: 100%;
+
+}
 .section h2 {
     margin-top: 0;
     border-bottom: 2px solid #26389f;
     padding-bottom: 10px;
 }
+.cv-download {
+    display: flex;
 
+    justify-content: flex-end;
+}
+
+.cv-download .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #113d6b;
+    color: white;
+    border-color: #113d6b;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download .btn:hover {
+    background-color: #355170;
+}
+
+.cv-download .btn i {
+    margin-right: 8px; /* Odstęp między ikoną a tekstem */
+}
 .skills, .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -407,29 +440,4 @@ h2 {
     position: relative;
 }
 
-.cv-download {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.cv-download .btn {
-    display: inline-flex;
-    align-items: center;
-    background-color: #113d6b;
-    color: white;
-    border-color: #113d6b;
-    padding: 10px 20px;
-    font-size: 13px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cv-download .btn:hover {
-    background-color: #355170;
-}
-
-.cv-download .btn i {
-    margin-right: 8px; /* Odstęp między ikoną a tekstem */
-}
