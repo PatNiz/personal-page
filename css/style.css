@@ -44,7 +44,16 @@ header .contact-info-header {
     border-radius: 8px;
     margin-top: 20px;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 
+    .skills-container {
+        flex-direction: column;
+    }
+}
 header .contact-info-header p {
     margin: 5px 0;
 }
@@ -287,8 +296,7 @@ footer {
     width: 48%;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .skills-title {
