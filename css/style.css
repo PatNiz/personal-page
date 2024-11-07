@@ -422,7 +422,7 @@ h2 {
 .hobby-description p {
     font-size: 16px;
     line-height: 1.5;
-
+    justify-content: center; /* Center the text vertically */
     color: #555;
     margin: 0;
 }
@@ -505,9 +505,9 @@ h2 {
 }
 
 .hobby-gif {
-    width: 50px;
+    width: 40px;
     height: auto;
-    margin-right: 15px;
+
     vertical-align: middle;
 }
 
